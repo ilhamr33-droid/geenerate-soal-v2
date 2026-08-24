@@ -2,9 +2,7 @@ const tombolSubmit = document.getElementById("submitSoal");
 
 tombolSubmit.addEventListener("click", function () {
 
-    // ============================================================
-    // MENGAMBIL DATA DARI INPUT
-    // ============================================================
+   
 
     const apiKey = document.getElementById("apiKey").value;
 
@@ -27,9 +25,7 @@ tombolSubmit.addEventListener("click", function () {
         document.getElementById("kelas").value;
 
 
-    // ============================================================
-    // PROMPT
-    // ============================================================
+   
 
     const prompt = `
 
@@ -165,9 +161,7 @@ Jangan memberikan penjelasan, komentar, atau teks tambahan di luar hasil soal da
 `;
 
 
-    // ============================================================
-    // CEK API KEY
-    // ============================================================
+    
 
     if (apiKey.trim() === "") {
 
@@ -178,9 +172,7 @@ Jangan memberikan penjelasan, komentar, atau teks tambahan di luar hasil soal da
     }
 
 
-    // ============================================================
-    // MENGIRIM REQUEST KE GEMINI
-    // ============================================================
+   
 
     fetch(
         "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent",
@@ -211,9 +203,7 @@ Jangan memberikan penjelasan, komentar, atau teks tambahan di luar hasil soal da
     )
 
 
-    // ============================================================
-    // MEMBACA RESPONSE
-    // ============================================================
+    
 
     .then(response => {
 
@@ -265,9 +255,7 @@ Jangan memberikan penjelasan, komentar, atau teks tambahan di luar hasil soal da
     })
 
 
-    // ============================================================
-    // MENANGANI ERROR
-    // ============================================================
+   
 
     .catch(error => {
 
@@ -285,9 +273,7 @@ Jangan memberikan penjelasan, komentar, atau teks tambahan di luar hasil soal da
 });
 
 
-// ================================================================
-// TOMBOL SALIN SOAL
-// ================================================================
+
 
 const tombolSalin =
     document.getElementById("salinSoal");
