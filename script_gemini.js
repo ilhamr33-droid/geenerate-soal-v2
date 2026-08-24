@@ -128,6 +128,27 @@ ATURAN PEMBUATAN SOAL:
    - Pastikan hanya ada SATU jawaban yang paling tepat.
    - Soal pilihan ganda harus diakhiri dengan ....
    - Jika bagian yang perlu diisi berada di tengah kalimat, berikan ... pada bagian tersebut.
+   
+  13. ATURAN FORMAT TEKS DAN MATEMATIKA:
+   - Output harus berupa teks biasa yang dapat langsung disalin ke Microsoft Word atau Google Docs.
+   - JANGAN menggunakan Markdown untuk memformat rumus.
+   - JANGAN menggunakan LaTeX.
+   - JANGAN menggunakan tanda $ sebagai pembungkus rumus.
+   - JANGAN menggunakan \(...\) atau \[...\].
+   - Jangan menggunakan kode pemrograman untuk menuliskan rumus.
+   - Gunakan simbol matematika Unicode jika tersedia.
+   - Contoh:
+     44 cm²
+     112 m²
+     625 cm²
+     1/2
+     3/4
+     25 × 4 = 100
+   - Jangan menulis:
+     $44\text{ cm}^2$
+     $112\text{ m}^2$
+     \frac{1}{2}
+     25 \times 4 = 100
 
 
 PEMERIKSAAN SEBELUM MEMBERIKAN HASIL:
