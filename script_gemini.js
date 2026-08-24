@@ -2,7 +2,11 @@ const tombolSubmit = document.getElementById("submitSoal");
 
 tombolSubmit.addEventListener("click", function () {
 
-   
+   const hasil = document.querySelector(".hasil");
+
+hasil.innerText = "⏳ Sedang membuat soal...";
+
+document.getElementById("salinSoal").style.display = "none";
 
     const apiKey = document.getElementById("apiKey").value;
 
