@@ -1,12 +1,14 @@
 const tombolSubmit = document.getElementById("submitSoal");
 
-tombolSubmit.addEventListener("click", function () {
+tombolSubmit.addEventListener("click", async function () {
 
    const hasil = document.querySelector(".hasil");
 
 hasil.innerText = "⏳ Sedang membuat soal...";
 
 document.getElementById("salinSoal").style.display = "none";
+
+await new Promise(resolve => setTimeout(resolve, 100));
 
     const apiKey = document.getElementById("apiKey").value;
 
