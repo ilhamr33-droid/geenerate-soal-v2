@@ -2,9 +2,7 @@ const tombolSubmit = document.getElementById("submitSoal");
 
 tombolSubmit.addEventListener("click", function () {
 
-    // ============================================================
-    // MENGAMBIL DATA DARI INPUT
-    // ============================================================
+    
 
     const apiKey = document.getElementById("apiKey").value;
     const tujuanPembelajaran =
@@ -21,9 +19,7 @@ tombolSubmit.addEventListener("click", function () {
         document.getElementById("kelas").value;
 
 
-    // ============================================================
-    // PROMPT
-    // ============================================================
+    
 
     const prompt = `
 
@@ -158,9 +154,7 @@ Jangan memberikan penjelasan, komentar, atau teks tambahan di luar hasil soal da
 `;
 
 
-    // ============================================================
-    // MENGIRIM REQUEST KE GROQ
-    // ============================================================
+    
 
     fetch("https://api.groq.com/openai/v1/chat/completions", {
 
@@ -189,9 +183,7 @@ Jangan memberikan penjelasan, komentar, atau teks tambahan di luar hasil soal da
     })
 
 
-    // ============================================================
-    // MEMBACA RESPONSE
-    // ============================================================
+    
 
     .then(response => response.json())
 
@@ -222,9 +214,7 @@ Jangan memberikan penjelasan, komentar, atau teks tambahan di luar hasil soal da
     })
 
 
-    // ============================================================
-    // MENANGANI ERROR
-    // ============================================================
+    
 
     .catch(error => {
 
@@ -236,9 +226,7 @@ Jangan memberikan penjelasan, komentar, atau teks tambahan di luar hasil soal da
 });
 
 
-// ================================================================
-// TOMBOL SALIN SOAL
-// ================================================================
+
 
 const tombolSalin =
     document.getElementById("salinSoal");
