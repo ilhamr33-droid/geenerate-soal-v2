@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gaya soal.css">
+</head>
+<body>
+    <button id="tombolKembali">Kembali</button>
+<div class="glass-box">
+<h1>APLIKASI GENERATE SOAL</h1>
+<h2>By : Ilham Maulana Ramadhan</h2>
+<label for="apiKey">Key</label>
+<input type="password" id="apiKey" class="input-form">
+<p></p>
+<label for="kelas">kelas</label>
+<p></p>
+<input type="text" id="kelas" class="input-form">
+<p></p>
+<label for="tujuanPembelajaran">Tujuan Pembelajaran</label>
+<p></p>
+<textarea id="tujuanPembelajaran" class="input-form"></textarea>
+<p></p>
+<label for="kognitif">Kognitif</label>
+<p></p>
+<input type="text" id="kognitif" class="input-form">
+<p></p>
+<label for="jumlahSoal">Jumlah Soal</label>
+<p></p>
+<input type="text" id="jumlahSoal" class="input-form">
+<p></p>
+<label for="bentukSoal">Bentuk Soal</label> 
+<select id="bentukSoal">
+    <option value="Pilihan Ganda">Pilihan Ganda</option>
+    <option value="Isian">Isian</option>
+    <option value="Essay">Essay</option>
+</select>
+<p></p>
+<label for="bentukOpsi">Bentuk Opsi Pilihan Ganda</label>
+<select id="bentukOpsi">
+    <option value="A, B, C">A, B, C</option>
+    <option value="A, B, C, D">A, B, C, D</option>
+    <option value="A, B, C, D, E">A, B, C, D, E</option>
+</select>
+<p></p>
+<button id="submitSoal">Submit</button>
+<div class="hasil"></div>
+<button id="salinSoal" style="display: none;">Salin Soal</button>
+</div>
+<script src="script_grooq.js"></script>
+</body>
+</html>
